@@ -71,7 +71,6 @@ Content\escenario\roca2.xnb
 Content\personaje_camina\0013.xnb
 Content\cursor\0001.xnb
 Content\cursor\0002.xnb
-Content\SpriteFont1.xnb
 Content\malo1\001.xnb
 Content\malo1\002.xnb
 Content\malo1\003.xnb
@@ -102,3 +101,4 @@ Content\malo2\0007.xnb
 Content\malo2\0008.xnb
 Content\malo2\0009.xnb
 Content\malo2\0010.xnb
+Content\SpriteFont1.xnb
