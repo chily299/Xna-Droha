@@ -42,15 +42,15 @@ namespace WindowsGame3
         public void draw2(SpriteBatch barch)
         {
             draw(barch);
-            if (esperaFinPoder)
+            /*if (esperaFinPoder)
             {
                 for (i = 0; i < poderes.Count; i++)
                 {
                     poderes[i].draw(barch); 
                 }
                 
-            }
-           // poderes[poderActual].draw(barch); 
+            }*/
+            poderes[poderActual].draw(barch); 
 
         } 
 
@@ -97,142 +97,134 @@ namespace WindowsGame3
         public void agregarPoderes(ContentManager Content)
         {
             Texture2D ima;
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0001");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0030");
             poderes[0].agregarImagenes(ima, 1);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0002");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0002");
             poderes[0].agregarImagenes(ima, 2);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0004");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0004");
             poderes[0].agregarImagenes(ima, 3);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0005");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0005");
             poderes[0].agregarImagenes(ima, 4);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0007");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0007");
             poderes[0].agregarImagenes(ima, 5);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0008");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0008");
             poderes[0].agregarImagenes(ima, 6);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0009");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0009");
             poderes[0].agregarImagenes(ima, 7);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0010");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0010");
             poderes[0].agregarImagenes(ima, 8);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0011");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0011");
             poderes[0].agregarImagenes(ima, 9);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0012");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0012");
             poderes[0].agregarImagenes(ima, 10);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0014");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0014");
             poderes[0].agregarImagenes(ima, 11);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0015");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0015");
             poderes[0].agregarImagenes(ima, 12);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0016");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0016");
             poderes[0].agregarImagenes(ima, 13);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0017");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0017");
             poderes[0].agregarImagenes(ima, 14);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0019");
+            ima = Content.Load<Texture2D>("poder_1_guerrero/0019");
             poderes[0].agregarImagenes(ima, 15);
             poderes[0].fin = 15;
             poderes[0].tiempoActualiza = 0.05f;
            
             //Poder 2
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0001");
-            poderes[0].agregarImagenes(ima, 1);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0002");
-            poderes[0].agregarImagenes(ima, 2);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0004");
-            poderes[0].agregarImagenes(ima, 3);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0005");
-            poderes[0].agregarImagenes(ima, 4);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0007");
-            poderes[0].agregarImagenes(ima, 5);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0008");
-            poderes[0].agregarImagenes(ima, 6);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0009");
-            poderes[0].agregarImagenes(ima, 7);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0010");
-            poderes[0].agregarImagenes(ima, 8);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0011");
-            poderes[0].agregarImagenes(ima, 9);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0012");
-            poderes[0].agregarImagenes(ima, 10);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0014");
-            poderes[0].agregarImagenes(ima, 11);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0015");
-            poderes[0].agregarImagenes(ima, 12);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0016");
-            poderes[0].agregarImagenes(ima, 13);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0017");
-            poderes[0].agregarImagenes(ima, 14);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0019");
-            poderes[0].agregarImagenes(ima, 15);
-            poderes[0].fin = 15;
-            poderes[0].tiempoActualiza = 0.05f;
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0001");
+            poderes[1].agregarImagenes(ima, 1);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0002");
+            poderes[1].agregarImagenes(ima, 2);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0004");
+            poderes[1].agregarImagenes(ima, 3);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0005");
+            poderes[1].agregarImagenes(ima, 4);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0008");
+            poderes[1].agregarImagenes(ima, 5);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0010");
+            poderes[1].agregarImagenes(ima, 6);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0012");
+            poderes[1].agregarImagenes(ima, 7);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0014");
+            poderes[1].agregarImagenes(ima, 8);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0015");
+            poderes[1].agregarImagenes(ima, 9);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0017");
+            poderes[1].agregarImagenes(ima, 10);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0019");
+            poderes[1].agregarImagenes(ima, 11);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0021");
+            poderes[1].agregarImagenes(ima, 12);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0022");
+            poderes[1].agregarImagenes(ima, 13);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0024");
+            poderes[1].agregarImagenes(ima, 14);
+            ima = Content.Load<Texture2D>("poder_2_guerrero/0025");
+            poderes[1].agregarImagenes(ima, 15);
+            poderes[1].fin = 15;
+            poderes[1].tiempoActualiza = 0.05f;
 
             //Poder 3
 
             ima = Content.Load<Texture2D>("poder_3_guerrero/0001");
-            poderes[0].agregarImagenes(ima, 1);
+            poderes[2].agregarImagenes(ima, 1);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0002");
-            poderes[0].agregarImagenes(ima, 2);
+            poderes[2].agregarImagenes(ima, 2);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0004");
-            poderes[0].agregarImagenes(ima, 3);
+            poderes[2].agregarImagenes(ima, 3);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0005");
-            poderes[0].agregarImagenes(ima, 4);
+            poderes[2].agregarImagenes(ima, 4);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0007");
-            poderes[0].agregarImagenes(ima, 5);
+            poderes[2].agregarImagenes(ima, 5);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0008");
-            poderes[0].agregarImagenes(ima, 6);
+            poderes[2].agregarImagenes(ima, 6);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0009");
-            poderes[0].agregarImagenes(ima, 7);
+            poderes[2].agregarImagenes(ima, 7);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0010");
-            poderes[0].agregarImagenes(ima, 8);
+            poderes[2].agregarImagenes(ima, 8);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0011");
-            poderes[0].agregarImagenes(ima, 9);
+            poderes[2].agregarImagenes(ima, 9);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0012");
-            poderes[0].agregarImagenes(ima, 10);
+            poderes[2].agregarImagenes(ima, 10);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0014");
-            poderes[0].agregarImagenes(ima, 11);
+            poderes[2].agregarImagenes(ima, 11);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0015");
-            poderes[0].agregarImagenes(ima, 12);
+            poderes[2].agregarImagenes(ima, 12);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0016");
-            poderes[0].agregarImagenes(ima, 13);
+            poderes[2].agregarImagenes(ima, 13);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0017");
-            poderes[0].agregarImagenes(ima, 14);
+            poderes[2].agregarImagenes(ima, 14);
             ima = Content.Load<Texture2D>("poder_3_guerrero/0019");
-            poderes[0].agregarImagenes(ima, 15);
-            poderes[0].fin = 15;
-            poderes[0].tiempoActualiza = 0.05f;
+            poderes[2].agregarImagenes(ima, 15);
+            poderes[2].fin = 15;
+            poderes[2].tiempoActualiza = 0.05f;
         
             //Poder 4
 
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0001");
-            poderes[0].agregarImagenes(ima, 1);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0002");
-            poderes[0].agregarImagenes(ima, 2);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0004");
-            poderes[0].agregarImagenes(ima, 3);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0005");
-            poderes[0].agregarImagenes(ima, 4);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0007");
-            poderes[0].agregarImagenes(ima, 5);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0008");
-            poderes[0].agregarImagenes(ima, 6);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0009");
-            poderes[0].agregarImagenes(ima, 7);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0010");
-            poderes[0].agregarImagenes(ima, 8);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0011");
-            poderes[0].agregarImagenes(ima, 9);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0012");
-            poderes[0].agregarImagenes(ima, 10);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0014");
-            poderes[0].agregarImagenes(ima, 11);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0015");
-            poderes[0].agregarImagenes(ima, 12);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0016");
-            poderes[0].agregarImagenes(ima, 13);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0017");
-            poderes[0].agregarImagenes(ima, 14);
-            ima = Content.Load<Texture2D>("poder_3_guerrero/0019");
-            poderes[0].agregarImagenes(ima, 15);
-            poderes[0].fin = 15;
-            poderes[0].tiempoActualiza = 0.05f;
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0002");
+            poderes[3].agregarImagenes(ima, 1);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0003");
+            poderes[3].agregarImagenes(ima, 2);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0004");
+            poderes[3].agregarImagenes(ima, 3);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0005");
+            poderes[3].agregarImagenes(ima, 4);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0006");
+            poderes[3].agregarImagenes(ima, 5);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0007");
+            poderes[3].agregarImagenes(ima, 6);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0008");
+            poderes[3].agregarImagenes(ima, 7);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0009");
+            poderes[3].agregarImagenes(ima, 8);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0010");
+            poderes[3].agregarImagenes(ima, 9);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0011");
+            poderes[3].agregarImagenes(ima, 10);
+            ima = Content.Load<Texture2D>("poder_4_guerrero/0012");
+            poderes[3].agregarImagenes(ima, 11);
+            poderes[3].fin = 11;
+            poderes[3].tiempoActualiza = 0.1f;
         }
         
 
