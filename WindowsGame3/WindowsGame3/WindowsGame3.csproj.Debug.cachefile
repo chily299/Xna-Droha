@@ -1,4 +1,4 @@
-Content\mapa.xnb
+Content\SpriteFont1.xnb
 Content\personaje_camina\0001.xnb
 Content\personaje_camina\0003.xnb
 Content\personaje_camina\0005.xnb
@@ -101,4 +101,8 @@ Content\malo2\0007.xnb
 Content\malo2\0008.xnb
 Content\malo2\0009.xnb
 Content\malo2\0010.xnb
+<<<<<<< HEAD
 Content\SpriteFont1.xnb
+=======
+Content\mapa.xnb
+>>>>>>> 2246cdef97786ef19502fe1a4fda5cc9b734d8b8
