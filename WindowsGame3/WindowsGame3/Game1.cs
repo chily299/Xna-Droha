@@ -330,7 +330,29 @@ namespace WindowsGame3
             if (keystate.IsKeyDown(Keys.D3) || gamepadstate.DPad.Right == ButtonState.Pressed)
             {
                 principal.atacar();
+                principal.poderActual = 2;
+                principal.poderes[2].ejecutar();
+            }
+
+            if (keystate.IsKeyDown(Keys.D2) || gamepadstate.DPad.Right == ButtonState.Pressed)
+            {
+                principal.atacar();
+                principal.poderActual = 1;
+                principal.poderes[1].ejecutar();
+            }
+
+            if (keystate.IsKeyDown(Keys.D1) || gamepadstate.DPad.Right == ButtonState.Pressed)
+            {
+                principal.atacar();
+                principal.poderActual = 0;
                 principal.poderes[0].ejecutar();
+            }
+
+            if (keystate.IsKeyDown(Keys.D4) || gamepadstate.DPad.Right == ButtonState.Pressed)
+            {
+                principal.atacar();
+                principal.poderActual = 3;
+                principal.poderes[3].ejecutar();
             }
 
             //cambiar fondo
