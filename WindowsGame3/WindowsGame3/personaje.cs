@@ -20,7 +20,7 @@ namespace WindowsGame3
         // estadisticas basicas
         int fuerza;
         int velocidad;
-        Boolean direccion;
+        // Boolean direccion;
         Boolean bloquearMovimiento;
         Boolean esperaFinPoder,banderaFinPoder;
         public int poderActual,i;
@@ -42,16 +42,12 @@ namespace WindowsGame3
         public void draw2(SpriteBatch barch)
         {
             draw(barch);
-            /*if (esperaFinPoder)
+            if (esperaFinPoder)
             {
-                for (i = 0; i < poderes.Count; i++)
-                {
-                    poderes[i].draw(barch); 
-                }
-                
-            }*/
-            poderes[poderActual].draw(barch); 
-
+                poderes[poderActual].direccion = this.direccion;
+                poderes[poderActual].draw(barch);                
+            }
+            
         } 
 
 

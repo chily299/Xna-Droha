@@ -32,6 +32,7 @@ namespace WindowsGame3
         Vector2 origenSprite;
         int ventanaAlto, ventanaAncho;
         public int imagenActual;
+        public Boolean direccion;
 
         public basico(GraphicsDevice device, Vector2 posi, Texture2D ima1, Texture2D ima2)
         {
@@ -63,8 +64,10 @@ namespace WindowsGame3
         {
                 if(animacion.Count == 0 || imagenActual < 0 || animacion.Count < imagenActual)
                     return;
-
-                barch.Draw(animacion[imagenActual].imagen, posicion, null, Color.White, 0.0f, origenSprite, 1.0f, SpriteEffects.None, 0.0f);
+                if(direccion)
+                    barch.Draw(animacion[imagenActual].imagen, posicion, null, Color.White, 0.0f, origenSprite, 1.0f, SpriteEffects.FlipHorizontally, 0.0f);
+                else    
+                    barch.Draw(animacion[imagenActual].imagen, posicion, null, Color.White, 0.0f, origenSprite, 1.0f, SpriteEffects.None, 0.0f);
 
             
         }
@@ -105,7 +108,7 @@ namespace WindowsGame3
 
         public void arriba() { posicion.Y -= 5; }
         public void abajo() { posicion.Y += 5; }
-        public void derecha() { posicion.X += 5; }
-        public void izquierda() { posicion.X -= 5; }
+        public void derecha() { posicion.X += 5; direccion = true; }
+        public void izquierda() { posicion.X -= 5; direccion = false; }
     }
 }
