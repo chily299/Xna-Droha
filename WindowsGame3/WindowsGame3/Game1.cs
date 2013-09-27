@@ -67,8 +67,8 @@ namespace WindowsGame3
             device = graphics.GraphicsDevice;
  
             // TODO: use this.Content to load your game content here
-
-            Texture2D ima = Content.Load<Texture2D>("mapa");
+            Texture2D ima;
+            ima = Content.Load<Texture2D>("mapa");
             mimapa.fondo = ima;
             Texture2D ima2 = Content.Load<Texture2D>("cursor/0001");
             mimapa.cursor.agregarImagenes(ima2, 1);
